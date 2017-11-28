@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# https://github.com/justijndepover/.dotfiles/tree/master/scripts
+# https://github.com/justijndepover/.dotfiles/tree/master/zsh
 #
-# List of custom git scripts 
+# List of custom git scripts
 #
 
 gpush(){
@@ -15,4 +15,8 @@ gfix(){
 	git add .
 	git commit -m '🐞 quick bugfix'
 	git push
+}
+
+g:init(){
+	git init
 }
