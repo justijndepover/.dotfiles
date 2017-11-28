@@ -5,13 +5,13 @@
 # List of custom git scripts
 #
 
-gpush(){
+g:push(){
 	git add .
 	git commit -m $1
-	git push -u origin master
+	git push
 }
 
-gfix(){
+g:fix(){
 	git add .
 	git commit -m '🐞 quick bugfix'
 	git push
