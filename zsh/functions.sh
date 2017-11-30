@@ -40,3 +40,11 @@ ds:find(){
 dotfiles(){
 	cd ~/dotfiles
 }
+
+ip:4(){
+	host -t A $1
+}
+
+ip:6(){
+	host -t AAAA $1
+}
