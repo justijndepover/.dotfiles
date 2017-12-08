@@ -43,22 +43,14 @@ dotfiles(){
 
 # networking
 
-ip:4(){
+ip::4(){
 	host -t A $1
 }
 
-ip:6(){
+ip::6(){
 	host -t AAAA $1
 }
 
-ip(){
-	ipconfig getifaddr en0
-}
-
-ip:lan(){
-	ipconfig getifaddr en0
-}
-
-ip:wan(){
+ip::wan(){
 	curl ipecho.net/plain; echo
 }
