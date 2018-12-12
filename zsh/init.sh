@@ -12,9 +12,7 @@ export ZSH=/Users/justijndepover/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME=agnoster
-# ZSH_THEME=lambda
-# ZSH_THEME=pure
+ZSH_THEME=sorin
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -58,7 +56,7 @@ ZSH_THEME=agnoster
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git wd nyan)
+plugins=(git colored-man colorize wd zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 DEFAULT_USER="justijndepover"
@@ -66,9 +64,11 @@ DEFAULT_USER="justijndepover"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="/Users/justijndepover/pear/share/pear:$PATH"
+export PATH="/Users/justijndepover/pear/bin:$PATH"
 # uncomment this line to use php v7 (warning slow because xdebug is enabled)
 # export PATH="/usr/local/php5/bin:$PATH"
-# export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
+# export PATH=/Applications/MAMP/bin/php/php7.0.8/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,3 +87,6 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# add vi mode
+# bindkey -v
